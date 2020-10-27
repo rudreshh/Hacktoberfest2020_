@@ -24,7 +24,7 @@ if __name__=="__main__":
         freq[i] += freq[i-1] 
   
     #  Setting to output array 
-    for i in range(len(ls)-1, -1, -1): 
+    for i in range(len(ls)-1, -1, -1):  // participating in hacktoberfest 2020 
         listsorted[freq[ls[i] - min(ls)] - 1] = ls[i] 
         freq[ls[i] - min(ls)] -= 1
   
